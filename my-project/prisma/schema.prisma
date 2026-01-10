@@ -11,7 +11,7 @@ datasource db {
 model Bar {
   id         Int      @id @default(autoincrement())
   title      String
-  totalHours Int
+  totalHours Decimal
   parts      Part[]
   createdAt  DateTime @default(now())
   updatedAt  DateTime @updatedAt
@@ -20,7 +20,7 @@ model Bar {
 model Part {
   id        Int      @id @default(autoincrement())
   title     String
-  hours     Int
+  hours     Decimal
   barId     Int
   bar       Bar      @relation(fields: [barId], references: [id], onDelete: Cascade)
   createdAt DateTime @default(now())
