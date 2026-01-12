@@ -6,9 +6,13 @@ export default function Home() {
 
       <main>
        <div>
-         <h1> Hello this is my first </h1>
+         <h1 className="text-center text-3xl p-5"> Mini project TimeBlocks</h1>
         
-         <AddBar />
+        <div className="border rounded-2xl mx-5 p-5">
+            <div className="ml-auto bg-amber-300 w-[20vw] h-[25vh] relative">
+              <AddBar />
+            </div>
+        </div>
        </div>
       </main>
       
