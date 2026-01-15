@@ -83,7 +83,7 @@ const decrease = () => {
 
           <div className="bg-white rounded-xl w-[80%] h-[80%] p-5 flex flex-col">
                 {/* hours */}
-                <div className = "flex items-center p-2 gap-1">
+                <div className = "flex items-center p-2">
                     <label> Hours</label>
                     {/* button */}   
                         <button onClick={decrease}
